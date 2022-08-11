@@ -1,0 +1,132 @@
+/*base stylings*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#container{
+    border: 3px solid black;
+    background-color: gray;
+    position: relative;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#containerfl{
+    border: 3px solid black;
+    background-color: gray;
+    position: relative;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+
+
+#desc{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    position: relative;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+#p1{
+    background-color: #FFC0CB;
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    border: 2px black solid;
+    padding: 10px;
+    position: relative;
+    float: right;
+    width: 33.33%;
+    margin-top: -1px;
+    margin-right: -1px;
+}
+
+#p2{
+    background-color: #800000;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    border: 2px black solid;
+    padding: 10px;
+    position: relative;
+    float: right;
+    width: 33.33%;
+    margin-top: -1px;
+    margin-right: -1px;
+}
+
+#p3{
+    background-color: #FFE5B4;
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    border: 2px black solid;
+    padding: 10px;
+    position: relative;
+    float: right;
+    width: 33.33%;
+    margin-top: -1px;
+    margin-right: -1px;
+}
+
+/************Responsive Framework***********/
+
+
+/* Media Queries -------- */
+/***********For Desktop Device*************/
+
+
+@media (min-width:992px) {
+    .col-lg-3 
+    {
+        float: left;
+        width: 30%;
+        left: 30px;
+    }
+}
+
+/**********For Tablet Devices*************/
+@media (min-width:768px) and (max-width:991px){
+        .col-md-2
+        {
+           float: left;
+           width:40%;          
+        }
+
+        #container{
+            left: 50px;
+        }
+        #containerfl{
+            left:50px;
+            width:82%;
+            height:40%;
+        }
+    }
+/**********For Mobile viewing*************/
+@media (max-width:767px){
+        .col-sm-1
+        {
+            float:left;
+        }
+        #container{
+            margin: 30px;
+        }
+        #containerfl{
+            margin:30px;
+        }
+}
