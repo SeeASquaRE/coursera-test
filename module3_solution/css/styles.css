@@ -1,0 +1,99 @@
+/* Base Styles */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*** HEADER ***/
+#header-nav{
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+}
+.navbar-brand{
+    padding-top: 10px;
+}
+.navbar-brand h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #808080;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+button.navbar-toggler
+{
+    float: right;
+    border: 0;
+    margin: 0;
+    color: #0000;
+    visibility: hidden;
+}
+div > .navbar-nav{
+    text-align: center;
+    top: 0;
+}
+/***END HEADER***/
+
+/****MAIN CONTENT*****/
+h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.tile1{
+    background-color: #808080;
+    margin-top: 10px;
+}
+.tile1 > section{
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#p1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+/****END OF MAIN CONTENT****/
+
+/*******Base Styles********/
+
+/****Media Queries****/
+
+/********** Desktop devices only **********/
+@media (min-width: 992px){
+    #content-tiles{
+        padding: 0;
+    }
+    
+    }
+    
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px){
+   #content-tiles{
+    padding: 0;
+   }
+}
+
+/**********Mobile devices only **********/
+@media (max-width: 767px){
+    .tile1{
+        width: 80%;
+        margin-left: 50px;
+    }
+    button.navbar-toggler{
+        visibility: visible;
+    }
+}
+
