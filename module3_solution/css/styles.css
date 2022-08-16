@@ -88,10 +88,12 @@ h2{
 
 /**********Mobile devices only **********/
 @media (max-width: 767px){
-    .tile1{
-        width: 80%;
-        margin-left: 40px;
-    }
+   .row{
+    width: 100%;
+   }
+   .tile1{
+     margin: auto 10px 0 10px;
+   }
     button.navbar-toggler{
         visibility: visible;
     }
